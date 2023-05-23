@@ -1,0 +1,23 @@
+#include<stdio.h>
+int main()
+{
+    int n,i;
+    float c,max;
+    printf("\nEnter the number of elements: ");
+    scanf("%d", &n);
+    printf("\nEnter %d numbers :\n", n);
+    printf("\nElement 1: ");
+    scanf("%f",&max);
+    for(i = 2; i <= n; i++)
+    {
+        printf("\nElement %d :", i);
+        scanf("%f", &c);
+        if(max<c)  
+        {
+            max=c;
+        }
+    }
+
+    printf("\nThe largest of the %d numbers is  %f ",n,max);
+    return 0;
+}
