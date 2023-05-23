@@ -1,0 +1,24 @@
+using System;
+
+class GFG
+{
+	
+	static float exponential(int n, float x)
+	{
+		// initialize sum of series
+		float sum = 1;
+
+		for (int i = n - 1; i > 0; --i )
+			sum = 1 + x * sum / i;
+
+		return sum;
+	}
+	
+	// driver program
+	public static void Main ()
+	{
+		int n = 10;
+		float x = 1;
+		Console.Write("e^x = " + exponential(n, x));
+	}
+}
